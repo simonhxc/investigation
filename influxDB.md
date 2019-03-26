@@ -54,4 +54,12 @@ insert point,order=test1 value=1,code="codeTest1" 1
 select * from point where code = 'codeTest1'
 插入时字符串用""， 查询时字符串用''
 ```
+group by 参数只能是time和tag?
+对时间字符串格式要求只能是yyyy-MM-dd HH:mm:ss??
+- yyyy/MM/dd失败
+存入influxDB的时间戳为UTC
+调查一下UTC,Unix时间戳，是否有UTC时间戳的说法？
 
+&lt;&gt;转义字符,因为markDown中认为尖括号是html的符号
+
+select mean(code1) from point where time > '2019-03-26 14:00:00' and time < '2019-03-26 15:00:00'and device='no1' group by time(1m)

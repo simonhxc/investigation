@@ -1,0 +1,2 @@
+- `netstat -ano`查找端口占用pid
+- `tasklist|findstr "<pid>"` 查找pid资源
