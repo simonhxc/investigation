@@ -63,3 +63,5 @@ group by 参数只能是time和tag?
 &lt;&gt;转义字符,因为markDown中认为尖括号是html的符号
 
 select mean(code1) from point where time > '2019-03-26 14:00:00' and time < '2019-03-26 15:00:00'and device='no1' group by time(1m)
+
+select * from RealtimePoints where DeviceNo='433_14' AND TenantId='9999900521' AND time >= 131643072000000000 AND time < 131982624000000000 limit 250
