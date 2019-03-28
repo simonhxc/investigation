@@ -15,3 +15,21 @@
 - influxDB连续查询
 - <measurement>[,<tag-key>=<tag-value>...] <field-key>=<field-value>[,<field2-key>=<field2-value>...] [unix-nano-timestamp] 
 - influxDB支持HTTP查询？
+- rm * 
+- rm <file_name>
+- cat>><file_name>
+- vi <file_name>
+
+
+
+#设置代理
+export http_proxy=http://192.168.174.1:1080
+export https_proxy=https://192.168.174.1:1080
+export http_proxy=socks://192.168.174.1:1080
+export http_proxy=sock4://192.168.174.1:1080
+export http_proxy=sock5://192.168.174.1:1080
+#如果需要账号密码
+export http_proxy=username:password@127.0.0.1:1080
+#删除代理
+unset http_proxy
+unset https_proxy
