@@ -33,3 +33,19 @@ export http_proxy=username:password@127.0.0.1:1080
 #删除代理
 unset http_proxy
 unset https_proxy
+
+- 撤销所有未缓存的修改  git checkout .
+- 撤销已经添加到缓存的修改 git reset HEAD .
+- Task.FromResult<>
+- 弹出框，积极的按钮放在右边
+
+- `service.byzan.iubang.com` 和 `byzan.iubang.com`是同一个IP
+- `docker ps`查看所有在运行的容器
+- docker曾经使用过的去outlook中查看
+- `http://byzan.iubang.com:13606`查看自动发送程序 
+
+- select HP1_FuZaiE1Z1Perc,HP1_FuZaiE1Z2Perc from RealtimePoints where DeviceNo='433-14' AND TenantId='9999900101' AND time >= '2018-03-29 17:00:00.000' AND time < '2019-03-29 17:00:20.000'
+
+- influxDB查询的时候，不能使用*,要根据device取出所有的码点
+- 考虑查询的时候，把时间转换为时间戳，（需要考虑influxDB是以纳秒为计量单位的）
+- 查询数据库或查询表做成从配置读取？
